@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    height: 300px;
+    background-color: lightskyblue;
+    flex-direction: row;  /*PODE SER: row, row-reverse column reverse*/
+    flex-wrap: wrap; /* PODE SER: nowrap, wrap, wrap-reverse*/
+   justify-content: space-evenly; /* PODE SER: flex-start, flex-end, center, space-between, space-around, space-evenly*/
+    align-items: center; /*PARA TESTAR: flex-start, flex-end, center, stretch, baseline*/
+    gap: 10px; /* PODE SER TBM row-gap: 50px; ou column-gap: 10px; */
+}
+.item {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    border: 5px solid black;
+    padding: 5px;
+    background-color: lightblue;
+}
