@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exemplo de media query</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        h1{
+            font-size: 24pt;
+        }
+        p{
+            font-size: 18pt;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .item{
+            margin: 5px;
+            padding: 5px;
+            width: 200px;
+            border: 3px solid lightgray;
+            background-color: white;
+        }
+        @media(max-width:600px) {
+            body{
+                background-color: lightpink;
+            }
+            h1{
+                font-size: 36pt;
+            }
+            p{
+                font-size: 28pt;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<h1>Exemplo de media query</h1>
+<p>essa página explica o funcionamento de media query.</p>
+<div class="container">
+    <div class="item">trabalho incrível!</p></div>
+    <div class="item">nota 10!</p></div>
+</div>
+</body>
+</html>
