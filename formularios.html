@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formulários</title>
+</head>
+<body>
+<h1>formulários</h1>
+<p>aula sobre formulários em HTML</p>
+<form id="form">
+    <label for="nome">nome</label>
+    <br/>
+  <input type="text" id="nome" name="nome" placeholder="nome"
+  required
+  >
+    <br/>
+    <label for="senha">senha</label>
+    <br/>
+    <input type="password" id="senha" name="senha"
+           placeholder="digite sua Senha"
+           required
+           >
+    <br/>
+  <br/>
+  <input id="enviar" type="submit" value="enviar">
+</form>
+</body>
+<script type="application/javascript">
+  function dizer_ola(event){
+    event.preventDefault();
+    let nome =document.getElementById("nome").value;
+      let senha =document.getElementById("senha").value;
+    alert("Olá " + nome + "! sua senha é" + senha);
+  }
+  document.getElementById("form").addEventListener("submit", dizer_ola);
+</script>
+</html>

@@ -1,0 +1,16 @@
+<style>
+input[type="text"], textarea {
+    background-color: #f0f8ff; /* Fundo azul claro */
+    color: #333;               /* Texto cinza escuro */
+    border: 1px solid #ccc;    /* Borda cinza */
+    padding: 8px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Fundo verde */
+    color: white;              /* Texto branco */
+    border: none;
+    padding: 10px 20px;
+}
+
+
