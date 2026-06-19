@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cores</title>
+<body>
+
+    <style>
+        :root {
+            --primaria-500: #080708;
+            --primaria-300: #605460;
+            --primaria-800: #040404;
+            --primaria-100: #b2a7b2;
+            --primaria-50: #d9d3d9;
+
+            --erro-500: #878E88;
+            --erro-300:#aeb3af;
+            --erro-50:#ebeceb;
+            --erro-600:#6f7670;
+            --erro-700:#595f5a;
+
+            --verde-500: #96C0B7;
+            --texto-500: #D4DFC7;
+            --aviso-500: #FEF6C9;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: var(--primaria-100);
+            color: var(--primaria-300);
+
+
+        }
+        button{
+            color:black;
+            font-weight: bold;
+            border: 0;
+            padding: 5px 10px;
+
+        }
+        button:hover{
+            background-color: var(--erro-500);
+            filter: brightness(90%);
+        }
+        .erro{
+            background-color: var(--erro-700);
+        }
+        .button-escuro:active {
+            filter: brightness(0.75);
+            transform: scale(0.98);
+        }
+        .minha-borda {
+            border: 2px solid blue;
+        }
+
+        .caixa {
+            border-radius: 10px 30px 50px 5px;
+            .botao-profundidade:hover {
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25),
+                0 6px 0px #b2a7b2;
+                transform: translateY(-2px);
+            }
+        }
+    </style>
+
+    <h1>Cores</h1>
+    <p>como usar cores em HTML e CSS.</p>
+
+    <button class="erro">
+    formatar HD
+</button>
+    <button class="erro">
+        deletar meus dados.
+    </button>
+
+</head>
+</body>
+</html>
